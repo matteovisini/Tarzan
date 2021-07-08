@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="STILE.css">
+  <title> TarzanFireRun</title>
+
+</head>
+
+<body>
+  <style>
+  body{
+    background-color: #000000;}
+
+   </style>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="slideshow/testo 1.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+    </div>
+
+	  <div class="mySlides fade">
+	     <img src="slideshow/scena1.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <img src="slideshow/testo 2.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+	  <div class="mySlides fade">
+	    <img src="slideshow/scena2.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/testo 3.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/scena3.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/testo 4.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/scena4.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/testo 5.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="slideshow/scena6.jpg" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <div class="mySlides fade">
+	    <img src="menu/Comandi.png" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+	  </div>
+
+    <a class="next" onclick="plusSlides(1)"> <img src="slideshow/pulsante.png" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;"> </a>
+
+    <div class="mySlides fade">
+	    <img src="menu/Meccaniche.png" class="centro" style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;">
+      <div class="play1">
+      	    <a href="gioco.html"><img src="menu/MeccanicheCorri.png" alt="play1" style=" position: absolute; margin: auto;  top: 600px; left: 665px; right: 0; bottom: 0;"></a>
+                 </div>
+    </div>
+
+</div><br>
+
+  <script>
+		  var slideIndex = 1;
+		  showSlides(slideIndex);
+		  function plusSlides(n) {
+		    showSlides(slideIndex += n);
+		  }
+
+		  function currentSlide(n) {
+		    showSlides(slideIndex = n);
+		  }
+		  function showSlides(n) {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    if (n > slides.length) {slideIndex = slide.length}
+		    if (n < 1) {slideIndex = slides.length}
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none";
+		    }
+		    slides[slideIndex-1].style.display = "block";
+		  }
+
+
+  </script>
+</body>
+</html>
